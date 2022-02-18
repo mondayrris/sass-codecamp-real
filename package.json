@@ -1,0 +1,12 @@
+{
+  "name": "sass-codecamp-real",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "auto-changelog -p --release-summary --commit-limit false --output CHANGELOG.md --template keepachangelog && git add CHANGELOG.md"
+  },
+  "author": "mondayrris",
+  "license": "MIT"
+}
