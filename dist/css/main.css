@@ -148,15 +148,28 @@
   grid-gap: 2rem;
 }
 
-.projects__items .projects_item {
+.projects__item {
   position: relative;
   border-bottom: 5px solid #ff652f;
   overflow: hidden;
   cursor: pointer;
 }
 
-.projects__items .projects_item img {
+.projects__item img {
   width: 100%;
+}
+
+.projects__item::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff652f;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .projects .social-icons {

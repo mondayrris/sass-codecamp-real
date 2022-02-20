@@ -29,16 +29,28 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
+    }
 
-        .projects_item {
-            position: relative;
-            border-bottom: 5px solid $secondary-color;
-            overflow: hidden;
-            cursor: pointer;
-    
-            img {
-                width: 100%;
-            }
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $secondary-color;
+            opacity: 0;
+            @include transition-ease;
         }
     }
 
