@@ -1,5 +1,6 @@
 @import './config';
 @import './home';
+@import './about';
 @import './menu';
 
 body {
@@ -17,6 +18,10 @@ h1, h2, h3 {
 a {
     color: #fff;
     text-decoration: none;
+}
+
+.text-secondary {
+    color: $secondary-color;
 }
 
 header {
