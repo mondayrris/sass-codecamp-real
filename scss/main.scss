@@ -1,8 +1,9 @@
 @import './config';
+@import './menu';
 @import './home';
 @import './about';
 @import './projects';
-@import './menu';
+@import './contact';
 
 body {
     background: $primary-color;
