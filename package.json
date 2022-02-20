@@ -8,5 +8,8 @@
     "version": "auto-changelog -p --release-summary --commit-limit false --output CHANGELOG.md --template keepachangelog && git add CHANGELOG.md"
   },
   "author": "mondayrris",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "auto-changelog": "^2.4.0"
+  }
 }
